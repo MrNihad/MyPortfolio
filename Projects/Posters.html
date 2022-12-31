@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" href="poster.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="..\Home.html" class="active">Home</a>
+      <a href="Posters.html">Projects</a>
+      <a href="..\About\About.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="https://www.facebook.com/nihat.qurbanov.9/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/in/nihad-qurbanov-10121b187" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/_nihad.gurbanov/" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/MrNihad" class="social-icon"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="container">
+      <div class="section-poster">
+        <h2>Posters</h2>
+        <div class="poster">
+          <div class="container__img-holder">
+            <img src="..\Posters\Nihad_Gurbanov_Final_Project.jpg" alt="Image"
+            data-text="Bees have vital importance in our lives, not just in honey production as well as being the primary
+            pollinator in nature. Therefore deciding where to put the beehives is very important. &#10;&#32;&#32;
+            Several factors influence the bees, such as closeness to water sources, flora(land cover), and proximity to urban areas and
+            agricultural fields. It seems like it would be a great idea to put it near agricultural fields because of
+            pollination. However, one particular factor has lethal effects on bees, which is pesticides. So agricultural
+            fields are not ideal locations for bees. This research aims to find the best locations for beehives in Estonia using multi-criteria analysis. Especially for honey and wax production. This will help future beekeepers to choose the best place for the
+            colony.For this research, five main factors were chosen. These are proximity to roads, urban areas, water sources,
+            land cover type, and aspects. Each of these has a different effect on beekeeping. For example, beekeepers
+            tend to avoid urban areas and choose a location far from roads because of greenhouse gas. On the other
+            hand, closeness to water bodies and land cover type significantly impacts bees. Most of the datasets are
+            from the Estonian Land Board, and only the land cover data is Copernicus Corine land cover data. As a
+            methodology, the vector layers of roads, water bodies, urban areas, and land cover turned into raster data. Before turning land cover data to raster, the classification steps were done. I classified it into four
+            categories based on land type. After rasterization, the proximity analysis is done using the proximity
+            (raster distance) tool for roads, urban areas, and water bodies. Aspect data was created using elevation data. Then all these four datasets are reclassified into four
+            categories using reclassify by table tool. Based on referenced articles, the multi-criteria decision matrix
+            was created. The criteria index was 0.06. Table 1 illustrates the multi-criteria decision matrix. The main
+            weights put on land cover type and closeness to water bodies. Then the final map was created using a
+            raster calculator. Each layer is multiplied by its weight, and these raster layers are added together. As a
+            final step, a polygonize tool is used to turn this final raster layer into a vector layer, and statistics by
+            categories are used to calculate each suitable or unsuitable area’s sum.
+            Results showed that the most suitable areas are located around water bodies and in forest cover types. The
+            criteria for proximity to water bodies were taken from Mohd Noor Maris, N. (2008), and 0-200m was for
+            highly suitable criteria. That is why the highly suitable areas are smaller than others. Also, the proximity
+            to the road network has influenced it a lot. After area calculation, results showed that 52% of the study
+            area is moderately suitable, 40% is less suitable, almost 2% highly suitable, and 5.6% is not suitable. Since
+            Estonia has many forest areas, more than half of the study area is suitable for beekeeping. Figure 1 and
+            Table 2 illustrate these results.
+            The suitable areas for beekeeping in Estonia are analyzed using a multi-criteria matrix. Based on the
+            analysis of five factors, more than half of the study area is suitable for beekeeping. However, the highly
+            suitable areas contain a small portion of the study area. For future research, the analysis can be conducted
+            on more datasets and additional criteria.">
+            <p>Suitability analysis of beekeeping</p>
+          </div>
+          <div class="container__img-holder">
+            <img src="..\Posters\Nihad_Gurbanov_Lab_7.png" alt="Image"
+            data-text="In this project, network analysis was conducted on the schools in the 
+            Valga county of Estonia, located in the south of the country on the border with Latvia. 
+            The county has a population of around 30,000. Several analyses were carried out on the school network. 
+            First, speed limits were added to the roads based on their level according to the dataset. 
+            Then, the schools were snapped to the roads for analysis. The next step was to calculate the 
+            service areas for each high school using the QGIS Service Area tool. The number of students in 
+            these service areas was determined by creating convex hulls around the service areas and 
+            calculating summary statistics. The second task was to calculate service areas for a 5km distance and 
+            determine the number of students outside of these areas. Finally, the Grass 'v.net.salesman' 
+            tool was used to calculate the shortest route that connects all the high and primary schools.">
+            <p>Valgamaa school network analysis</p>
+          </div>
+          <div class="container__img-holder">
+            <img src="..\Posters\Nihad_Gurbanov_Poster_1.png" alt="Image"
+            data-text="This poster presents six variables for Tallinn that were collected for further analysis. 
+            The main goal of the analysis was to examine the relationship between 
+            Airbnb prices and other spatial factors such as average gross salary and noise levels. ">
+            <p>Tallinn Airbnb price analysis</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-map">
+        <h2>Maps</h2>
+        <div class="map">
+          <div class="container__img-holder">
+            <img src="..\Posters\movers1.png" alt="Image" data-text="This is a map of movement patterns. 
+            The lines represent the number of people moving. While it has an aesthetic appeal,
+             it can be somewhat difficult to interpret for data analysis purposes.">
+            <p>Estonia movement map</p>
+          </div>      
+          <div class="container__img-holder">
+            <img src="..\Posters\Nihad_Gurbanov_finalmap.png" alt="Image" data-text="In this poster, four types of interpolation techniques are 
+            demonstrated using weather data from the Estonian Weather Service. 
+            Thiessen polygons were generated using the Voronoi diagram tool, IDW interpolation was 
+            used to create an IDW map, B-spline interpolation was created using the B-spline tool in QGIS, 
+            and kriging was performed using the SmartMap plugin.">
+            <p>Temperature interpolation</p>
+          </div>
+        
+          
+        </div>
+      </div>
+      
+      <div class="section-animation">
+        <h2>Animations</h2>
+        <div class="animation">
+             
+          <div class="container__img-holder">
+            <img src="..\Posters\Nihad Gurbanov lab 9 3D Animation .gif" alt="Image"
+            data-text="Average monthly temprature animated using QGIS and Screen to GIF tools. This data covers 30 years period from 1970 to 2000. Average maximum temperature recorded in July and minmum recorded in February">
+            <p>Average monthly temprature</p>
+          </div>
+          <div class="container__img-holder">
+            <img src="..\Posters\Nihad Gurbanov Lab5.gif" alt="Image">
+          </div>
+          <div class="container__img-holder">
+            <img src="..\Posters\Gurbanov_2022_visualization.gif" alt="Image">
+          </div>
+          
+        </div>
+      </div>
+    
+      <div class="img-popup">
+          <button class="prev">&#10094;</button>
+          <img src="" alt="Popup Image" >
+          <!-- <div class="text">
+            <p>This is some text that will be displayed in the popup.</p>
+          </div> -->
+          <button class="next">&#10095;</button>
+        <div class="close-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div> 
+      </div>
+    </div>
+    
+    <script src="poster.js"></script>
+  </body>
+</html>
