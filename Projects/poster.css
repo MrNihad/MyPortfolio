@@ -25,7 +25,9 @@
   .container {
     max-width: 1200px;
     margin: 80px auto 0;
-    text-align: justify;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .container__img-holder {
@@ -357,11 +359,7 @@
 }
 
 /* Set the width of the image containers to 100% of the container width */
-@media screen and (max-width: 375px) {
-  .container__img-holder {
-    width: 100%;
-  }
-}
+
 
 /* Add some vertical space between the image containers */
 @media screen and (max-width: 375px) {
