@@ -313,14 +313,14 @@
   
 }
  
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .img-popup {
     max-width: 80%; /* Set the maximum width to 80% of the viewport width */
   }
 }
 
 /* Limit the size of the images within the popup container for iPhone screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .img-popup img {
     max-width: 100%; /* Set the maximum width to 100% of the container width */
     max-height: 90%; /* Set the maximum height to 90% of the container height */
@@ -328,21 +328,21 @@
 }
 
 /* Use object-fit: cover to resize the images to fill the container while preserving the aspect ratio for iPhone screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .img-popup img {
     object-fit: cover;
   }
 }
 
 /* Add a border around the images for iPhone screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .img-popup img {
     border: 1px solid #cccccc;
   }
 }
 
 /* Add a shadow around the images for iPhone screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .img-popup img {
     box-shadow: 0 0 10px #cccccc;
   }
