@@ -351,21 +351,14 @@
 }
 /* Use the flex layout to arrange the image containers in a vertical list */
 /* On small screens, stack the image containers vertically */
-@media screen and (max-width: 375px) {
-    .container {
-      flex-direction: column;
-    }
-    .container__img-holder {
-      width: 100%;
-      margin-right: 0;
-    }
-}
-@media screen and (max-width: 880px) {
-
-  .container .container__img-holder:nth-child(4n+1) {
-    margin-left: 16px;
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
   }
-
+  .container__img-holder {
+    max-width: 100%;
+  }
 }
 
   
