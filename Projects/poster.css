@@ -347,18 +347,28 @@
     box-shadow: 0 0 10px #cccccc;
   }
 }
-/* Set the maximum width of the image containers for iPhone screens */
+/* Use the flex layout to arrange the image containers in a vertical list */
 @media screen and (max-width: 375px) {
-  .container__img-holder {
-    max-width: 200px; /* Set the maximum width to 200 pixels */
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
-/* Set the exact width of the image containers for iPhone screens */
+/* Set the width of the image containers to 100% of the container width */
 @media screen and (max-width: 375px) {
   .container__img-holder {
-    width: 200px; /* Set the width to 200 pixels */
+    width: 100%;
   }
 }
+
+/* Add some vertical space between the image containers */
+@media screen and (max-width: 375px) {
+  .container__img-holder {
+    margin-bottom: 20px;
+  }
+}
+
 
   
