@@ -350,22 +350,15 @@
   }
 }
 /* Use the flex layout to arrange the image containers in a vertical list */
+/* On small screens, stack the image containers vertically */
 @media screen and (max-width: 375px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-
-/* Set the width of the image containers to 100% of the container width */
-
-
-/* Add some vertical space between the image containers */
-@media screen and (max-width: 375px) {
-  .container__img-holder {
-    margin-bottom: 20px;
-  }
+    .container {
+      flex-direction: column;
+    }
+    .container__img-holder {
+      width: 100%;
+      margin-right: 0;
+    }
 }
 
 
