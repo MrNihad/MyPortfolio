@@ -355,6 +355,7 @@
   .container {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
   }
   .container__img-holder {
     max-width: 100%;
