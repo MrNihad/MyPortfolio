@@ -25,7 +25,7 @@
   .container {
     max-width: 1200px;
     margin: 80px auto 0;
-    text-align: center;
+    text-align: justify;
    
   }
   .container-section-poster{
@@ -372,11 +372,23 @@
   .container {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 280px;
   }
   .container__img-holder {
     width: 280px;
   }
+  .container-section-poster{
+    width: 280px;
+
+  }
+  .container-section-map{
+    width: 280px;
+  }
+
+  .container-section-animation{
+    width: 280px;
+  }
 }
+
 
   
