@@ -28,24 +28,7 @@
     text-align: justify;
    
   }
-  .container-section-poster{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-  }
-  .container-section-map{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .container-section-animation{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
+ 
   .container__img-holder {
     max-width: 280px;
     display: inline-block;
@@ -374,20 +357,7 @@
     flex-direction: column;
     max-width: 280px;
   }
-  .container__img-holder {
-    width: 280px;
-  }
-  .container-section-poster{
-    width: 280px;
-
-  }
-  .container-section-map{
-    width: 280px;
-  }
-
-  .container-section-animation{
-    width: 280px;
-  }
+  
 }
 
 
