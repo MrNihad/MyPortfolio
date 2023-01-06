@@ -322,7 +322,7 @@
 /* Limit the size of the images within the popup container for iPhone screens */
 @media screen and (max-width: 375px) {
   .img-popup img {
-    max-width: 100%; /* Set the maximum width to 100% of the container width */
+     /* Set the maximum width to 100% of the container width */
     max-height: 90%; /* Set the maximum height to 90% of the container height */
   }
 }
@@ -347,5 +347,18 @@
     box-shadow: 0 0 10px #cccccc;
   }
 }
- 
+/* Set the maximum width of the image containers for iPhone screens */
+@media screen and (max-width: 375px) {
+  .container__img-holder {
+    max-width: 200px; /* Set the maximum width to 200 pixels */
+  }
+}
+
+/* Set the exact width of the image containers for iPhone screens */
+@media screen and (max-width: 375px) {
+  .container__img-holder {
+    width: 200px; /* Set the width to 200 pixels */
+  }
+}
+
   
