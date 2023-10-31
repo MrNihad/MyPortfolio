@@ -360,5 +360,12 @@
   
 }
 
-
+.education{
+  
+  width: 6cm;
+  height: 8cm;
+  border: #333 solid 0.2pt;
+  text-align: justify;
+  margin: auto;
+}
   

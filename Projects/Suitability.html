@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="suitability.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="..\Home.html" class="active">Home</a>
+        <a href="..\Projects\Posters.html">Projects</a>
+        <a href="..\About\About.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="https://www.facebook.com/nihat.qurbanov.9/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/nihad-qurbanov-10121b187" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/_nihad.gurbanov/" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/MrNihad" class="social-icon"><i class="fab fa-github"></i></a>
+    </div>
+    
+    <div class="container">
+      <h1 class="heading">Suitability analysis for beekeeping in Estonia</h1>
+        <div class="project1">
+          <div class="text_image">
+            <div class="project-text">
+              <h2>Background</h2>
+              <p class="project-description">Bees have vital importance in our lives, not just in honey production as well as being the primary
+                pollinator in nature. Therefore deciding where to put the beehives is very important. Several factors
+                influence the bees, such as closeness to water sources, flora(land cover), and proximity to urban areas and
+                agricultural fields. It seems like it would be a great idea to put it near agricultural fields because of
+                pollination. However, one particular factor has lethal effects on bees, which is pesticides. So agricultural
+                fields are not ideal locations for bees.</p>
+              <h2>Aim</h2>
+              <p>This research aims to find the best locations for beehives in Estonia using multi-criteria analysis. Especially for honey and wax production. This will help future beekeepers to choose the best place for the
+                colony.</p>
+              <h2>Data and Methods</h2>
+              <p class="project-description">For this research, five main factors were chosen. These are proximity to roads, urban areas, water sources,
+                land cover type, and aspects. Each of these has a different effect on beekeeping. For example, beekeepers
+                tend to avoid urban areas and choose a location far from roads because of greenhouse gas. On the other
+                hand, closeness to water bodies and land cover type significantly impacts bees. Most of the datasets are
+                from the Estonian Land Board, and only the land cover data is Copernicus Corine land cover data. As a
+                methodology, the vector layers of roads, water bodies, urban areas, and land cover turned into raster data. Before turning land cover data to raster, the classification steps were done. I classified it into four
+                categories based on land type. After rasterization, the proximity analysis is done using the proximity
+                (raster distance) tool for roads, urban areas, and water bodies. Aspect data was created using elevation data. Then all these four datasets are reclassified into four
+                categories using reclassify by table tool. Based on referenced articles, the multi-criteria decision matrix
+                was created. The criteria index was 0.06. Table 1 illustrates the multi-criteria decision matrix. The main
+                weights put on land cover type and closeness to water bodies. Then the final map was created using a
+                raster calculator. Each layer is multiplied by its weight, and these raster layers are added together. As a
+                final step, a polygonize tool is used to turn this final raster layer into a vector layer, and statistics by
+                categories are used to calculate each suitable or unsuitable area’s sum.
+                </p>
+                <h2>Results</h2>
+                <p>Results showed that the most suitable areas are located around water bodies and in forest cover types. The
+                  criteria for proximity to water bodies were taken from Mohd Noor Maris, N. (2008), and 0-200m was for
+                  highly suitable criteria. That is why the highly suitable areas are smaller than others. Also, the proximity
+                  to the road network has influenced it a lot. After area calculation, results showed that 52% of the study
+                  area is moderately suitable, 40% is less suitable, almost 2% highly suitable, and 5.6% is not suitable. Since
+                  Estonia has many forest areas, more than half of the study area is suitable for beekeeping. Figure 1 and
+                  Table 2 illustrate these results</p>
+                  <h2 class="Conclusion">Conclusion</h2>
+                <p>The suitable areas for beekeeping in Estonia are analyzed using a multi-criteria matrix. Based on the
+                  analysis of five factors, more than half of the study area is suitable for beekeeping. However, the highly
+                  suitable areas contain a small portion of the study area. For future research, the analysis can be conducted
+                  on more datasets and additional criteria.</p>
+            </div>
+            <div class="project-images">
+              <img src="..\Posters\hives-in-forest.jpg" alt="Bee hives" class="project-image1">
+              <img src="..\Posters\Honey_comb.jpg" alt="Honey comb" class="project-image1">
+              <div class="table">
+                <h3><i>Table 1. Multi-criteria decision matrix for factors</i></h3>
+                <table style="width:100%">
+                  <tr>
+                    <th>Factors</th>
+                    <th>Land use</th> 
+                    <th>Aspect</th>
+                    <th>Roads</th>
+                    <th>Urban areas</th> 
+                    <th>Water bodies</th>
+                    <th>Weights</th>
+                  </tr>
+                  <tr>
+                    <td><span>Land use</span></td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>2</td>
+                    <td>0.46</td>
+                  </tr>
+                  <tr>
+                    <td><span>Aspect</span></td>
+                    <td>0.2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>0.33</td>
+                    <td>0.175</td>
+                  </tr>
+                  <tr>
+                    <td><span>Roads</span></td>
+                    <td>0.14</td>
+                    <td>0.2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0.2</td>
+                    <td>0.06</td>
+                  </tr>
+                  <tr>
+                    <td><span>Urban areas</span></td>
+                    <td>0.11</td>
+                    <td>0.14</td>
+                    <td>0.5</td>
+                    <td>1</td>
+                    <td>0.125</td>
+                    <td>0.03</td>
+                  </tr>
+                  <tr>
+                    <td><span>Water bodies</span></td>
+                    <td>0.5</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>0.28</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="table">
+                <h3><i>Table 2. Statistics of suitable areas</i></h3>
+                <table style="width:100%">
+                  <tr>
+                    <th>Criteria</th>
+                    <th>Area sum (km²)</th> 
+                    <th>Percantage of the area</th>
+                  </tr>
+                  <tr>
+                    <td>Highly suitable</td>
+                    <td>803.21</td>
+                    <td>1.85</td>
+                  </tr>
+                  <tr>
+                    <td>Moderately suitable</td>
+                    <td>22630.34</td>
+                    <td>52.13</td>
+                  </tr>
+                  <tr>
+                    <td>Less suitable</td>
+                    <td>17528.59</td>
+                    <td>40.38</td>
+                  </tr>
+                  <tr>
+                    <td>Not suitable</td>
+                    <td>2448.41</td>
+                    <td>5.64</td>
+                  </tr>
+                </table>
+              </div>
+              
+  
+            </div>
+          </div>
+          
+          <div class="map">
+            <img src="..\Posters\final_map.png" alt="">
+            <h3><i>Figure 1. Suitability map of beekeeping in Estonia</i></h3>
+          </div>
+          <div id="reference">
+            <h2>Reference</h2>
+            <p>
+              <li>Mohd Noor Maris, N. (2008). Apicultural site zonation using GIS and multi-criteria decision analysis. Universiti Putra Malaysia Press.</li>
+              <li>Sarı, F., & Ceylan, D. A. (2017). 
+                Site Suitability Analysis for Beekeeping via Analytical Hierarchy Process, Konya Example.. ISPRS Annals of the Photogrammetry,
+                Remote Sensing and Spatial Information Sciences, IV-4/W4, 345–350. https://doi.org/10.5194/isprs-annalsiv-4-w4-345-2017
+              </li>
+              <li>Photo by Floris Bronkhorst on Unsplash. 4. Photo by Sophie Nengel on Unsplash
+              </p></li>
+              
+          </div>
+
+
+
+
+
+
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
